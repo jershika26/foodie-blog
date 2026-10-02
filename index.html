@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodeiBlog Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="menu-icon" id="menuIcon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <a href="index.html" class="nav-logo">
+                Foodei<span>blog</span>
+            </a>
+            <ul class="nav-items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#" onclick="filterCategory('ALL')">ALL RECIPES</a></li>
+                <li><a href="#" onclick="filterCategory('BREAKFAST')">BREAKFAST</a></li>
+                <li><a href="#" onclick="filterCategory('FAST FOOD')">FAST FOOD</a></li>
+                <li><a href="#" onclick="filterCategory('DINNER')">DINNER</a></li>
+            </ul>
+            <!-- Search icon only -->
+            <a href="search.html" class="search-icon" title="Search Recipes">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2 style="color: orange; font-family: cursive;">Foodei<span style="color: white;">blog</span></h2>
+        <a href="index.html">HOME</a>
+        <a href="#" onclick="filterCategory('ALL')">ALL RECIPES</a>
+        <a href="#" onclick="filterCategory('BREAKFAST')">BREAKFAST</a>
+        <a href="#" onclick="filterCategory('FAST FOOD')">FAST FOOD</a>
+        <a href="#" onclick="filterCategory('DINNER')">DINNER</a>
+        <a href="search.html">SEARCH</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Foodei<span style="color: black;">blog</span></h2>
+
+        <div class="blog-section">
+            <!-- Burger Card -->
+            <div class="card">
+                <a href="burger.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/burger.jpeg" alt="Burger" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">FAST FOOD</div>
+                            <h3>Burger</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Milkshake Card -->
+            <div class="card">
+                <a href="milkshake.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/milkshake.jpeg" alt="Milkshake" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">VEGAN DESSERTS</div>
+                            <h3>Milkshake</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Pizza Card -->
+            <div class="card">
+                <a href="pizza.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/pizza.jpeg" alt="Pizza" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">ITALIAN</div>
+                            <h3>Pizza</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Pancake Card -->
+            <div class="card">
+                <a href="pancake.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/pancake.jpg" alt="Pancake" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">BREAKFAST</div>
+                            <h3>Pancake</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Bread Omelette Card -->
+            <div class="card">
+                <a href="breadomelette.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/bread omelette.jpeg" alt="Bread Omelette" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">STREET FOOD</div>
+                            <h3>Bread Omelette</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Waffle Card -->
+            <div class="card">
+                <a href="waffle.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/waffle.jpeg" alt="Waffle" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">BREAKFAST</div>
+                            <h3>Waffle</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Grilled Chicken Card -->
+            <div class="card">
+                <a href="grilledchicken.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/chicken grill.jpg" alt="Grilled Chicken" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">PROTEIN</div>
+                            <h3>Grilled Chicken</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Chicken Biryani Card -->
+            <div class="card">
+                <a href="chickenbiryani.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/chibiryani.jpeg" alt="Chicken Biryani" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">LUNCH</div>
+                            <h3>Chicken Biryani</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Shawarma Card -->
+            <div class="card">
+                <a href="shawarma.html" class="overlay-card-link">
+                    <div class="overlay-card">
+                        <img src="images/sawarma.jpeg" alt="Shawarma" class="overlay-img">
+                        <div class="overlay-text">
+                            <div class="tag">DINNER</div>
+                            <h3>Shawarma</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- JavaScript -->
+            <script src="main.js"></script>
+</body>
+
+</html>
